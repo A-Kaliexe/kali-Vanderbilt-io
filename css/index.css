@@ -1,0 +1,99 @@
+/* General Body Styles */
+body {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    background-color: #f6f6ee;
+    color: #2F4F4F;
+}
+
+/* Header Styles */
+h1,
+h2 {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #003366;
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Section Styles */
+section {
+    padding: 20px 50px;
+    margin: 30px 0;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(16, 57, 146, 0.178);
+}
+
+/* List Styles */
+ul {
+    list-style: none;
+    /*padding: 0;
+    margin: 0;*/
+
+}
+
+li {
+    margin: 10px 0;
+
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+    color: #003366;
+}
+
+a:hover,
+a:focus {
+    color: #FF7F50;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 4px 5px rgba(16, 57, 146, 0.1);
+    background-color: #f6f6ee;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 90px;
+
+}
+
+
+/* About Section Styles */
+#About p {
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+/* Experience Section Styles */
+#Experience ul li {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(16, 57, 146, 0.1);
+}
+
+/* Connect Section Styles */
+#Connect ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#Connect ul li a img {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
