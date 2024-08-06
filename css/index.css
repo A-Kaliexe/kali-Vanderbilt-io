@@ -85,7 +85,29 @@ nav ul {
     box-shadow: 0 2px 4px rgba(16, 57, 146, 0.1);
 }
 
+#Experience .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#Experience .job {
+    font-weight: bold;
+    color: #003366;
+}
+
+#Experience .dates {
+    font-style: italic;
+    color: #003366;
+}
+
+
 /* Connect Section Styles */
+#Connect {
+    display: flex;
+}
+
 #Connect ul {
     display: flex;
     justify-content: center;
