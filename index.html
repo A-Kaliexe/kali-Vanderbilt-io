@@ -5,63 +5,77 @@
     <title>Portfolio Webpage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/440bbd417a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <h1>Kali Vanderbilt</h1>
-    <header id="Home">
-        <section class="navbar">
-            <div>
-                <nav>
-                    <ul>
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#About">About</a></li>
-                        <li><a href="#Experience">My Work</a></li>
-                        <li><a href="#Skills">Skills</a></li>
-                        <li><a href="#Projects">Projects</a></li>
-                        <li><a href="#Connect">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-    </header>
-    <section class="banner"></section>
-    <section id="About">
-        <h2>About</h2>
-        <p>I'm Kali, a frontend developer passionate about crafting engaging digital experiences. My coding journey
-            started
-            unexpectedly on Myspace, where I discovered a talent for customization that sparked my interest in
-            coding.</p>
-    </section>
-    <section id="Experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <div class="experience-header">
-                <span class="job">Code the Dream Fellow</span>
-                <span class="dates">January 2023 - Present</span>
-            </div>
-            <div class="job-description">
-                <p>Participating in an intensive, free online coding school. Learning full-stack development with a
-                    focus on practical,
-                    hands-on experience through advanced classes and team-based projects.</p>
-            </div>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <span class="job">G{Code} Fellow</span>
-                    <span class="dates">March 2024</span>
+    <div class="split-screen">
+        <!-- Sidebar Navigation -->
+        <div class="sidebar-nav">
+            <h1>Kali Vanderbilt</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Hero"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                    <li><a href="#About"><i class="fa-solid fa-user"></i><span>About</span></a></li>
+                    <li><a href="#Experience"><i class="fa-solid fa-briefcase"></i> <span>Experience</span></a></li>
+                    <li><a href="#Skills"><i class="fa-solid fa-gear"></i> <span>Skills</span></a></li>
+                    <li><a href="#Projects"><i class="fa-solid fa-list-check"></i> <span>Projects</span></a></li>
+                    <li><a href="#Connect"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Right Side Content -->
+        <div class="right-content">
+            <!-- Hero Section -->
+            <section id="Hero" class="hero">
+                <div class="hero-section">
+                    <h2>Frontend Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem possimus aspernatur mollitia
+                        error velit commodi dolore quas numquam! Velit facere ex ad voluptatibus blanditiis, laudantium
+                        voluptas assumenda debitis excepturi est?.</p>
+                    <a href="#about" class="hero-btn">Learn More</a>
                 </div>
-                <div class="job-description">
-                    <p>Participated in a 12-week virtual program designed to introduce coding to black, brown, and/or
-                        indigenous young women
-                        or non-binary people of color. Gained skills in HTML, CSS, and JavaScript, and completed
-                        multiple portfolio-ready
-                        projects.</p>
+            </section>
+
+            <!-- About Section -->
+            <section id="About" class="about">
+                <h2>About</h2>
+                <p>I'm Kali, a frontend developer passionate about crafting engaging digital experiences. My coding
+                    journey started unexpectedly on Myspace, where I discovered a talent for customization that sparked
+                    my interest in coding.</p>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="Experience" class="experience">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="job">Code the Dream Fellow</span>
+                        <span class="dates">January 2023 - Present</span>
+                    </div>
+                    <div class="job-description">
+                        <p>Participating in an intensive, free online coding school. Learning full-stack development
+                            with a focus on practical, hands-on experience through advanced classes and team-based
+                            projects.</p>
+                    </div>
+                </div>
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="job">G{Code} Fellow</span>
+                        <span class="dates">March 2024</span>
+                    </div>
+                    <div class="job-description">
+                        <p>Participated in a 12-week virtual program designed to introduce coding to black, brown,
+                            and/or indigenous young women or non-binary people of color. Gained skills in HTML, CSS, and
+                            JavaScript, and completed multiple portfolio-ready projects.</p>
+                    </div>
                 </div>
                 <div class="experience-item">
                     <div class="experience-header">
@@ -72,26 +86,37 @@
                         <p>Worked on redesigning the website for Disabled Hikers, focusing on accessibility and user
                             experience improvements.</p>
                     </div>
-                    </ul>
-    </section>
-    <section id="Skills">
-        <h2>Skills</h2>
-    </section>
-    <section id="Projects">
-        <h2>Projects</h2>
-    </section>
-    <section id="Connect">
-        <h2>Connect</h2>
-        <ul>
-            <li><a href="https://github.com/A-Kaliexe"><img src="css\images\github-logo.svg" alt="Github Profile"></a>
-            </li>
-            <li><a href="https://x.com/KaliexeA"><img src="css\images\twitter-x-logo.svg"
-                        alt="Twitter and/or X Profile"></a></li>
-            <li><a href="https://www.linkedin.com/in/akaliexe/"><img src="css\images\linkedin-logo.svg"
-                        alt="Linkedin Profile"></a></li>
-        </ul>
-    </section>
+                </div>
+            </section>
 
+            <!-- Skills Section -->
+            <section id="Skills" class="skills">
+                <h2>Skills</h2>
+                <p>List skills</p>
+
+            </section>
+
+            <!-- Projects Section -->
+            <section id="Projects" class="projects">
+                <h2>Projects</h2>
+
+
+            </section>
+
+            <!-- Connect Section -->
+            <section id="connect" class="connect">
+                <h2>Connect</h2>
+                <ul>
+                    <li><a href="https://github.com/A-Kaliexe"><img src="css/images/github-logo.svg"
+                                alt="Github Profile"></a></li>
+                    <li><a href="https://x.com/KaliexeA"><img src="css/images/twitter-x-logo.svg"
+                                alt="Twitter and/or X Profile"></a></li>
+                    <li><a href="https://www.linkedin.com/in/akaliexe/"><img src="css/images/linkedin-logo.svg"
+                                alt="Linkedin Profile"></a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
 </body>
 
 </html>
