@@ -1,6 +1,6 @@
 const footer = document.createElement("footer");
 /*Date-Year*/
-const today = new Date(); // Fixing the Date object
+const today = new Date();
 const thisYear = today.getFullYear();
 
 let copyright = document.createElement("p");

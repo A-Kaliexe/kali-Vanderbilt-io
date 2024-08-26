@@ -24,7 +24,8 @@ body {
 /* Sidebar Nav */
 .sidebar-nav {
     background: linear-gradient(307deg, #f6f6ee, #003366, #FF7F50);
-    width: 80px;
+    width: 9.5em;
+    min-width: 9em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,27 +35,27 @@ body {
 }
 
 .sidebar-nav:hover {
-    width: 200px;
-
+    width: 12em;
 }
 
 .sidebar-nav nav ul {
     list-style: none;
-
+    margin-top: 30px;
+    font-weight: 400;
 }
 
 .sidebar-nav nav ul li {
     margin: 20px 0;
+
 }
 
 .sidebar-nav nav ul li a {
     color: #f6f6ee;
-
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-top: 35px;
-    font-size: 20px;
+    margin-top: 30px;
+    font-size: 18.5px;
 }
 
 .sidebar-nav nav ul li a i {
@@ -76,9 +77,6 @@ body {
     overflow-y: auto;
 
 }
-
-
-
 
 /* Hero Section */
 .hero {
@@ -204,14 +202,15 @@ body {
 
 }
 
-/* Media Queries */
 @media (min-width: 768px) {
     .sidebar-nav {
-        width: 80px;
+        width: 12em;
+
     }
 
     .sidebar-nav:hover {
-        width: 200px;
+        width: 12em;
+
     }
 
     .sidebar-nav nav ul li a {
@@ -225,36 +224,50 @@ body {
 }
 
 /*Media queries- Mobile*/
+@media (min-width: 768px) {
+    .sidebar-nav {
+        width: 9em;
+    }
 
+    .sidebar-nav:hover {
+        width: 12em;
+    }
 
-/* For screens smaller than 768px */
+    .sidebar-nav nav ul li a {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .sidebar-nav nav ul li a span {
+        display: inline-block;
+    }
+}
+
+/* Media Queries - Mobile */
 @media (max-width: 767px) {
 
     /* Adjust Sidebar Nav */
     .sidebar-nav {
-        width: 60px;
+        width: 6em;
     }
 
-    /* Sidebar Na */
     .sidebar-nav:hover {
-        width: 150px;
+        width: 6em;
     }
-
 
     .sidebar-nav nav ul li a {
         font-size: 16px;
         justify-content: center;
-
     }
 
-    /* Nav bar, Hide text, show only icons */
+    /*only icons */
     .sidebar-nav nav ul li a span {
         display: none;
-
     }
 
+    /*text hidden*/
     .sidebar-nav:hover nav ul li a span {
-        display: inline-block;
+        display: none;
     }
 
     /* Right Content */
@@ -268,31 +281,13 @@ body {
         font-size: 18px;
     }
 
-
-
     .hero-btn {
         padding: 8px 20px;
         margin-top: 60px;
-
     }
-
 
     .experience-item {
         grid-template-columns: 1fr;
         padding: 10px;
-    }
-
-
-
-    /* Social Media Icons */
-    .connect ul li a img {
-        padding-top: 20px;
-        width: 40px;
-        height: 60px;
-    }
-
-    /* Section Padding */
-    .right-content section {
-        padding: 40px 20px;
     }
 }
