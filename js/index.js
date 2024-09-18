@@ -59,3 +59,29 @@ messageForm.addEventListener("submit", function (event) {
 
   messageForm.reset();
 });
+
+//Fetch Request
+fetch("https://api.github.com/users/A-Kaliexe/repos")
+  .then((res) => {
+    if (res.ok) {
+      return res.json();
+    } else {
+      throw new Error("Request failed");
+    }
+  })
+  .then((data) => {
+    console.log("Fetched data:", data);
+    const repositories = data;
+
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    repositories.forEach((repo) => {
+      const project = document.createElement("li");
+      project.innerText = repo.name;
+      projectList.appendChild(project);
+    });
+  })
+  .catch((error) => {
+    console.log("Error:", error);
+  });
