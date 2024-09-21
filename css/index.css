@@ -203,6 +203,14 @@ button {
 
 }
 
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: #f6f6ee;
+    padding: 25px;
+
+}
+
 @media (min-width: 768px) {
     .sidebar-nav {
         width: 12em;
